@@ -20,7 +20,7 @@ const ForgetPassword = () => {
 
     const onSubmit = async (values) => {
         try {
-            const res = await axios.post('https://password-reset-node-4-backend.onrender.com//api/user/forgetpassword', values);
+            const res = await axios.post('https://password-reset-node-4-backend.onrender.com/api/user/forgetpassword', values);
             setResponseMsg(res.data.message)
             toast.success(res.data.message)
 
